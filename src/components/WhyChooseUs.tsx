@@ -34,57 +34,32 @@ const WhyChooseUs = () => {
                 </div>
                 <div className="why-visual">
                     <div className="why-visual-container">
-                        {/* Orbit Rings */}
-                        <div className="orbit-ring ring-1"></div>
-                        <div className="orbit-ring ring-2"></div>
-
-                        {/* Core Element */}
-                        <div className="core-circle">
-                            <div className="core-content">
-                                <Zap size={32} color="#fff" style={{ marginBottom: '8px' }} />
-                                <span className="core-text">GROWTH</span>
-                                <span className="core-sub">Engine</span>
-                            </div>
-                        </div>
-
-                        {/* Floating Cards */}
-                        <div className="float-card card-1">
-                            <div className="card-icon bg-light-red">
-                                <TrendingUp size={20} />
-                            </div>
-                            <div className="card-content">
-                                <span className="card-label">Conversion</span>
-                                <span className="card-value">+150%</span>
-                            </div>
-                        </div>
-
-                        <div className="float-card card-2">
-                            <div className="card-icon bg-light-blue">
-                                <Users size={20} />
-                            </div>
-                            <div className="card-content">
-                                <span className="card-label">Engagement</span>
-                                <span className="card-value">High Vol.</span>
-                            </div>
-                        </div>
-
-                        <div className="float-card card-3">
-                            <div className="card-icon bg-light-green">
-                                <Target size={20} />
-                            </div>
-                            <div className="card-content">
-                                <span className="card-label">ROAS</span>
-                                <span className="card-value">4.5x</span>
-                            </div>
-                        </div>
-
-                        <div className="float-card card-4">
-                            <div className="card-icon bg-light-purple">
-                                <BarChart2 size={20} />
-                            </div>
-                            <div className="card-content">
-                                <span className="card-label">Analytics</span>
-                                <span className="card-value">Real-time</span>
+                        <div className="scene-3d">
+                            <div className="cube-wrapper">
+                                {/* Central Cube */}
+                                <div className="cube">
+                                    <div className="face front">
+                                        <Zap size={40} color="#fff" />
+                                    </div>
+                                    <div className="face back"></div>
+                                    <div className="face right"></div>
+                                    <div className="face left"></div>
+                                    <div className="face top"></div>
+                                    <div className="face bottom"></div>
+                                </div>
+                                {/* Floating Elements */}
+                                <div className="floating-item item-1">
+                                    <TrendingUp size={24} color="#fff" />
+                                </div>
+                                <div className="floating-item item-2">
+                                    <BarChart2 size={24} color="#fff" />
+                                </div>
+                                <div className="floating-item item-3">
+                                    <Target size={24} color="#fff" />
+                                </div>
+                                {/* Orbit Rings */}
+                                <div className="ring-3d ring-inner"></div>
+                                <div className="ring-3d ring-outer"></div>
                             </div>
                         </div>
                     </div>
