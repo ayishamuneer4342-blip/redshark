@@ -271,24 +271,42 @@ const WebDevPage = () => {
                 </section>
 
                 {/* 8. TOOLS & TECH */}
-                <section className="section-responsive text-center" style={{ background: '#f8fafc' }}>
+                <section className="section-responsive text-center" style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)', color: '#fff', padding: '100px 20px' }}>
                     <div className="container-responsive">
                         <ScrollReveal>
-                            <h2 className="heading-md" style={{ color: '#0f172a', marginBottom: '40px' }}>Our Technology Stack</h2>
+                            <h2 className="heading-lg" style={{ color: '#fff', marginBottom: '16px' }}>Our Technology Stack</h2>
+                            <p style={{ color: '#94a3b8', maxWidth: '600px', margin: '0 auto 50px', fontSize: '1.1rem' }}>
+                                We use the latest modern frameworks to ensure your website is fast, secure, and scalable.
+                            </p>
                         </ScrollReveal>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center', opacity: '0.7' }}>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
                             {['React', 'Next.js', 'Node.js', 'Express', 'TypeScript', 'PostgreSQL', 'MongoDB', 'WordPress', 'Shopify', 'AWS', 'Vercel'].map((tool, i) => (
                                 <ScrollReveal key={i} animation="zoom-in" delay={i * 50}>
                                     <span style={{
-                                        padding: '10px 20px',
-                                        background: '#fff',
+                                        padding: '12px 24px',
+                                        background: 'rgba(255, 255, 255, 0.05)',
                                         borderRadius: '30px',
-                                        fontSize: '0.95rem',
+                                        fontSize: '1rem',
                                         fontWeight: '600',
-                                        boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
-                                        color: '#475569',
-                                        display: 'inline-block'
-                                    }}>
+                                        border: '1px solid rgba(255, 255, 255, 0.1)',
+                                        color: '#e2e8f0',
+                                        display: 'inline-block',
+                                        transition: 'all 0.3s ease',
+                                        cursor: 'default'
+                                    }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                                            e.currentTarget.style.borderColor = '#ce1111';
+                                            e.currentTarget.style.color = '#fff';
+                                            e.currentTarget.style.transform = 'translateY(-2px)';
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                                            e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                                            e.currentTarget.style.color = '#e2e8f0';
+                                            e.currentTarget.style.transform = 'translateY(0)';
+                                        }}
+                                    >
                                         {tool}
                                     </span>
                                 </ScrollReveal>
