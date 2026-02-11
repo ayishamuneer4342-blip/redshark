@@ -29,7 +29,13 @@ const Tools = () => {
                     {tools.map((tool, index) => (
                         <div key={index} className="tool-card">
                             <div className="tool-icon-wrapper">
-                                <img src={tool.logo} alt={tool.name} className="tool-icon" />
+                                <img
+                                    src={tool.logo}
+                                    alt={tool.name}
+                                    className="tool-icon"
+                                    loading="lazy"
+                                    decoding="async"
+                                />
                             </div>
                             <span className="tool-name">{tool.name}</span>
                         </div>

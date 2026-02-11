@@ -40,7 +40,7 @@ const Testimonials = () => {
                             <div className="testimonial-author">
                                 {t.image ? (
                                     <div className="author-avatar-wrapper">
-                                        <img src={t.image} alt={t.name} className="author-avatar-img" />
+                                        <img src={t.image} alt={t.name} className="author-avatar-img" loading="lazy" />
                                     </div>
                                 ) : (
                                     <div className="author-avatar"></div>

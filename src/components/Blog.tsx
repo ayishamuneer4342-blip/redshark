@@ -18,7 +18,7 @@ const Blog = () => {
                     {recentPosts.map((post) => (
                         <div className="blog-card" key={post.id}>
                             <div className="blog-image">
-                                <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={post.image} alt={post.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
                             </div>
                             <div className="blog-content">
                                 <span className="blog-tag">{post.category}</span>
