@@ -82,8 +82,9 @@ const LeadForm = () => {
                             name="details"
                             value={formData.details}
                             onChange={handleChange}
+                            required
                             rows={3}
-                            placeholder="Project Details (Optional)"
+                            placeholder="Project Details"
                             className="lead-input lead-textarea"
                         ></textarea>
                     </div>
