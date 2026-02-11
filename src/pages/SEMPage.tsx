@@ -385,41 +385,60 @@ const SEMPage = () => {
                                 </div>
                             </ScrollReveal>
                             <ScrollReveal animation="slide-left">
-                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '300px' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '400px', overflow: 'visible' }}>
                                     {/* 3D Chart Container */}
                                     <div style={{
                                         position: 'relative',
-                                        width: '200px',
-                                        height: '240px',
+                                        width: '300px',
+                                        height: '320px',
                                         transformStyle: 'preserve-3d',
-                                        transform: 'perspective(1000px) rotateX(-20deg) rotateY(-30deg)',
+                                        transform: 'perspective(1200px) rotateX(-20deg) rotateY(-30deg)',
                                         display: 'flex',
                                         alignItems: 'flex-end',
                                         justifyContent: 'center',
-                                        gap: '30px'
+                                        gap: '40px'
                                     }}>
+                                        {/* Base Platform */}
+                                        <div style={{
+                                            position: 'absolute',
+                                            bottom: -20,
+                                            width: '360px',
+                                            height: '200px',
+                                            background: 'rgba(15, 23, 42, 0.5)',
+                                            transform: 'rotateX(90deg) translateZ(-10px)',
+                                            borderRadius: '20px',
+                                            boxShadow: '0 0 50px rgba(0,0,0,0.2)',
+                                            border: '1px solid rgba(255,255,255,0.1)'
+                                        }}></div>
+
                                         {/* Bar 1 - SEO (Slate) */}
-                                        <div style={{ position: 'relative', width: '40px', height: '100px', transformStyle: 'preserve-3d' }}>
+                                        <div style={{ position: 'relative', width: '60px', height: '140px', transformStyle: 'preserve-3d' }}>
                                             {/* Front */}
-                                            <div style={{ position: 'absolute', inset: 0, background: '#64748b', transform: 'translateZ(20px)' }}></div>
+                                            <div style={{ position: 'absolute', inset: 0, background: '#64748b', transform: 'translateZ(30px)' }}></div>
                                             {/* Top */}
-                                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '40px', background: '#94a3b8', transform: 'rotateX(90deg) translateZ(20px) translateY(-50%)', transformOrigin: 'top' }}></div>
+                                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '60px', background: '#94a3b8', transform: 'rotateX(90deg) translateZ(30px) translateY(-50%)', transformOrigin: 'top' }}></div>
                                             {/* Side */}
-                                            <div style={{ position: 'absolute', top: 0, right: 0, width: '40px', height: '100%', background: '#475569', transform: 'rotateY(90deg) translateZ(20px) translateX(50%)', transformOrigin: 'right' }}></div>
+                                            <div style={{ position: 'absolute', top: 0, right: 0, width: '60px', height: '100%', background: '#475569', transform: 'rotateY(90deg) translateZ(30px) translateX(50%)', transformOrigin: 'right' }}></div>
                                         </div>
 
                                         {/* Bar 2 - Ads (Light Red) */}
-                                        <div style={{ position: 'relative', width: '40px', height: '160px', transformStyle: 'preserve-3d' }}>
-                                            <div style={{ position: 'absolute', inset: 0, background: '#f87171', transform: 'translateZ(20px)' }}></div>
-                                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '40px', background: '#fca5a5', transform: 'rotateX(90deg) translateZ(20px) translateY(-50%)', transformOrigin: 'top' }}></div>
-                                            <div style={{ position: 'absolute', top: 0, right: 0, width: '40px', height: '100%', background: '#dc2626', transform: 'rotateY(90deg) translateZ(20px) translateX(50%)', transformOrigin: 'right' }}></div>
+                                        <div style={{ position: 'relative', width: '60px', height: '220px', transformStyle: 'preserve-3d' }}>
+                                            <div style={{ position: 'absolute', inset: 0, background: '#f87171', transform: 'translateZ(30px)' }}></div>
+                                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '60px', background: '#fca5a5', transform: 'rotateX(90deg) translateZ(30px) translateY(-50%)', transformOrigin: 'top' }}></div>
+                                            <div style={{ position: 'absolute', top: 0, right: 0, width: '60px', height: '100%', background: '#dc2626', transform: 'rotateY(90deg) translateZ(30px) translateX(50%)', transformOrigin: 'right' }}></div>
+                                            {/* Connector Line to Next */}
+                                            <div style={{
+                                                position: 'absolute', top: 0, right: -40, width: '40px', height: '4px',
+                                                background: '#ce1111', transform: 'translateY(10px) translateZ(30px) rotateZ(-30deg)',
+                                                opacity: 0.8
+                                            }}></div>
                                         </div>
 
                                         {/* Bar 3 - Growth (Brand Red) */}
-                                        <div style={{ position: 'relative', width: '40px', height: '220px', transformStyle: 'preserve-3d' }}>
-                                            <div style={{ position: 'absolute', inset: 0, background: '#ce1111', transform: 'translateZ(20px)' }}></div>
-                                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '40px', background: '#ef4444', transform: 'rotateX(90deg) translateZ(20px) translateY(-50%)', transformOrigin: 'top' }}></div>
-                                            <div style={{ position: 'absolute', top: 0, right: 0, width: '40px', height: '100%', background: '#991b1b', transform: 'rotateY(90deg) translateZ(20px) translateX(50%)', transformOrigin: 'right' }}></div>
+                                        <div style={{ position: 'relative', width: '60px', height: '300px', transformStyle: 'preserve-3d' }}>
+                                            <div style={{ position: 'absolute', inset: 0, background: '#ce1111', transform: 'translateZ(30px)' }}></div>
+                                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '60px', background: '#ef4444', transform: 'rotateX(90deg) translateZ(30px) translateY(-50%)', transformOrigin: 'top' }}></div>
+                                            <div style={{ position: 'absolute', top: 0, right: 0, width: '60px', height: '100%', background: '#991b1b', transform: 'rotateY(90deg) translateZ(30px) translateX(50%)', transformOrigin: 'right' }}></div>
                                         </div>
                                     </div>
                                 </div>

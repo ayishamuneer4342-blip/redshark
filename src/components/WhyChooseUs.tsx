@@ -47,15 +47,20 @@ const WhyChooseUs = () => {
                                     <div className="face top"></div>
                                     <div className="face bottom"></div>
                                 </div>
-                                {/* Floating Elements */}
+                                {/* Floating Elements & Connectors */}
+                                <div className="connector-line line-1"></div>
                                 <div className="floating-item item-1">
-                                    <TrendingUp size={24} color="#fff" />
+                                    <TrendingUp size={32} color="#fff" />
                                 </div>
+
+                                <div className="connector-line line-2"></div>
                                 <div className="floating-item item-2">
-                                    <BarChart2 size={24} color="#fff" />
+                                    <BarChart2 size={32} color="#fff" />
                                 </div>
+
+                                <div className="connector-line line-3"></div>
                                 <div className="floating-item item-3">
-                                    <Target size={24} color="#fff" />
+                                    <Target size={32} color="#fff" />
                                 </div>
                                 {/* Orbit Rings */}
                                 <div className="ring-3d ring-inner"></div>
