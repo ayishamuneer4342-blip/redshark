@@ -1,1 +1,8 @@
 /* Cleared for custom styling */
+
+.home-page {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    max-width: 100vw;
+}

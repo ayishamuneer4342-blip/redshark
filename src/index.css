@@ -39,7 +39,8 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   /* Prevent horizontal scroll */
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
@@ -49,10 +50,11 @@ body {
   line-height: 1.6;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  zoom: 0.8;
   overflow-x: hidden;
   /* Prevent horizontal scroll */
   width: 100%;
+  max-width: 100%;
+  position: relative;
 }
 
 a {
