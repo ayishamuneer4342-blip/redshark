@@ -385,8 +385,43 @@ const SEMPage = () => {
                                 </div>
                             </ScrollReveal>
                             <ScrollReveal animation="slide-left">
-                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                    <BarChart2 size={200} color="#e2e8f0" strokeWidth={1} />
+                                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '300px' }}>
+                                    {/* 3D Chart Container */}
+                                    <div style={{
+                                        position: 'relative',
+                                        width: '200px',
+                                        height: '240px',
+                                        transformStyle: 'preserve-3d',
+                                        transform: 'perspective(1000px) rotateX(-20deg) rotateY(-30deg)',
+                                        display: 'flex',
+                                        alignItems: 'flex-end',
+                                        justifyContent: 'center',
+                                        gap: '30px'
+                                    }}>
+                                        {/* Bar 1 - SEO (Slate) */}
+                                        <div style={{ position: 'relative', width: '40px', height: '100px', transformStyle: 'preserve-3d' }}>
+                                            {/* Front */}
+                                            <div style={{ position: 'absolute', inset: 0, background: '#64748b', transform: 'translateZ(20px)' }}></div>
+                                            {/* Top */}
+                                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '40px', background: '#94a3b8', transform: 'rotateX(90deg) translateZ(20px) translateY(-50%)', transformOrigin: 'top' }}></div>
+                                            {/* Side */}
+                                            <div style={{ position: 'absolute', top: 0, right: 0, width: '40px', height: '100%', background: '#475569', transform: 'rotateY(90deg) translateZ(20px) translateX(50%)', transformOrigin: 'right' }}></div>
+                                        </div>
+
+                                        {/* Bar 2 - Ads (Light Red) */}
+                                        <div style={{ position: 'relative', width: '40px', height: '160px', transformStyle: 'preserve-3d' }}>
+                                            <div style={{ position: 'absolute', inset: 0, background: '#f87171', transform: 'translateZ(20px)' }}></div>
+                                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '40px', background: '#fca5a5', transform: 'rotateX(90deg) translateZ(20px) translateY(-50%)', transformOrigin: 'top' }}></div>
+                                            <div style={{ position: 'absolute', top: 0, right: 0, width: '40px', height: '100%', background: '#dc2626', transform: 'rotateY(90deg) translateZ(20px) translateX(50%)', transformOrigin: 'right' }}></div>
+                                        </div>
+
+                                        {/* Bar 3 - Growth (Brand Red) */}
+                                        <div style={{ position: 'relative', width: '40px', height: '220px', transformStyle: 'preserve-3d' }}>
+                                            <div style={{ position: 'absolute', inset: 0, background: '#ce1111', transform: 'translateZ(20px)' }}></div>
+                                            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '40px', background: '#ef4444', transform: 'rotateX(90deg) translateZ(20px) translateY(-50%)', transformOrigin: 'top' }}></div>
+                                            <div style={{ position: 'absolute', top: 0, right: 0, width: '40px', height: '100%', background: '#991b1b', transform: 'rotateY(90deg) translateZ(20px) translateX(50%)', transformOrigin: 'right' }}></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </ScrollReveal>
                         </div>
