@@ -10,6 +10,7 @@ const Footer = () => {
                     {/* Col 1 */}
                     <div className="footer-col">
                         <img src="/logo-red.jpg" alt="RED SHARC" style={{ height: '64px', width: 'auto', marginBottom: '16px' }} />
+                        <p style={{ fontWeight: 'bold', marginBottom: '16px', color: '#ce1111' }}>Best Digital Marketing Agency in Kerala</p>
                         <p className="footer-desc">
                             Access the world's top digital marketing talent without the agency markup.
                         </p>
