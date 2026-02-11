@@ -389,13 +389,7 @@ const SMMPage = () => {
                 {/* 8. SERVICE AREAS & FAQ */}
                 <section className="section-responsive" style={{ background: '#f8fafc' }}>
                     <div className="container-responsive">
-                        <ScrollReveal>
-                            <div className="text-center" style={{ marginBottom: '80px' }}>
-                                <Globe size={40} color="#db2777" style={{ marginBottom: '20px' }} />
-                                <h2 className="heading-lg" style={{ marginBottom: '20px', color: '#0f172a' }}>Serving Businesses Across Kerala</h2>
-                                <p style={{ color: '#64748b' }}>We offer social media marketing services in Kerala, including Kochi, Calicut, Trivandrum, Thrissur, and Ernakulam.</p>
-                            </div>
-                        </ScrollReveal>
+
 
                         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
                             <h3 className="heading-lg text-center" style={{ marginBottom: '40px', color: '#0f172a' }}>Frequently Asked Questions</h3>
