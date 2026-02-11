@@ -1,0 +1,51 @@
+.reveal-item {
+    opacity: 0;
+    will-change: opacity, transform;
+    transition-property: transform, opacity;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-item.visible {
+    opacity: 1;
+}
+
+/* Fade Up */
+.reveal-item.fade-up {
+    transform: translateY(40px);
+}
+
+.reveal-item.fade-up.visible {
+    transform: translateY(0);
+}
+
+/* Fade In */
+.reveal-item.fade-in {
+    /* No transform, just opacity */
+}
+
+/* Slide Left */
+.reveal-item.slide-left {
+    transform: translateX(-40px);
+}
+
+.reveal-item.slide-left.visible {
+    transform: translateX(0);
+}
+
+/* Slide Right */
+.reveal-item.slide-right {
+    transform: translateX(40px);
+}
+
+.reveal-item.slide-right.visible {
+    transform: translateX(0);
+}
+
+/* Zoom In */
+.reveal-item.zoom-in {
+    transform: scale(0.95);
+}
+
+.reveal-item.zoom-in.visible {
+    transform: scale(1);
+}

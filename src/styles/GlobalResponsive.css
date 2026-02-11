@@ -1,0 +1,158 @@
+/* Global Responsive Layouts & Utilities */
+
+:root {
+    --section-padding-desktop: 100px 20px;
+    --section-padding-tablet: 60px 20px;
+    --section-padding-mobile: 40px 16px;
+
+    --gap-desktop: 60px;
+    --gap-mobile: 30px;
+}
+
+/* --- Typography --- */
+.heading-xl {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.heading-lg {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.heading-md {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 700;
+}
+
+.text-body-lg {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.text-body {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* --- Layouts --- */
+.page-wrapper {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container-responsive {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-responsive {
+    padding: var(--section-padding-desktop);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-desktop);
+    align-items: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* --- Components --- */
+.card-base {
+    padding: 30px;
+    border-radius: 16px;
+    height: 100%;
+}
+
+.btn-responsive {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    width: auto;
+}
+
+/* --- Mobile Breakpoints --- */
+@media (max-width: 1024px) {
+    .section-responsive {
+        padding: var(--section-padding-tablet);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .section-responsive {
+        padding: var(--section-padding-mobile);
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+        grid-template-columns: 1fr;
+        /* Stack everything */
+        gap: var(--gap-mobile);
+    }
+
+    .text-body-lg {
+        font-size: 1.125rem;
+    }
+
+    .text-body {
+        font-size: 1rem;
+    }
+
+    .btn-responsive {
+        width: 100%;
+        /* Full width buttons on mobile */
+        justify-content: center;
+    }
+
+    .flex-mobile-col {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+    .order-mobile-2 {
+        order: 2;
+    }
+
+    .order-mobile-1 {
+        order: 1;
+    }
+}
+
+/* Small mobile adjustments moved outside */
+@media (max-width: 380px) {
+    .section-responsive {
+        padding: 40px 12px;
+    }
+
+    .container-responsive {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

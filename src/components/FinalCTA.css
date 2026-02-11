@@ -1,0 +1,51 @@
+.final-cta-section {
+    padding: 6rem 0;
+    background-color: var(--bg-dark);
+}
+
+.cta-box {
+    background: linear-gradient(135deg, #ce1111, #000000);
+    /* Official Red to Black */
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ce1111;
+}
+
+.cta-headline {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.cta-sub {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.cta-guarantee {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .cta-headline {
+        font-size: 2rem;
+    }
+}

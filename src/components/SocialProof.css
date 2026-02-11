@@ -1,0 +1,64 @@
+.social-proof {
+    padding: 3rem 0;
+    background-color: var(--bg-darker);
+    border-bottom: 1px solid var(--border);
+}
+
+.social-proof-label {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.marquee-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
+    display: flex;
+    gap: 4rem;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+    /* Slowed down slightly for more logos */
+    padding: 1rem 0;
+}
+
+.brand-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+}
+
+.brand-logo-img {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+    /* Ensure original colors are kept, no filters */
+    filter: none;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    transition: transform 0.3s ease;
+}
+
+.brand-logo-img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% / 4));
+        /* Move one set length for seamless loop */
+    }
+}

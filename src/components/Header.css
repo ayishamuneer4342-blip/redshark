@@ -1,0 +1,289 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    z-index: 1000;
+    transition: background-color 0.3s, backdrop-filter 0.3s;
+}
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    color: var(--secondary);
+    text-decoration: none;
+    /* Ensure link doesn't have underline */
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    /* Center align items vertically */
+}
+
+.desktop-nav a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header.scrolled .desktop-nav a {
+    color: var(--text-main, #334155);
+}
+
+.desktop-nav a:hover {
+    color: var(--primary);
+}
+
+.header.scrolled .desktop-nav a:hover {
+    color: var(--primary);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Dropdown Styles */
+.nav-item-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dropdown-trigger {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background-color: #ffffff;
+    /* White background for visibility */
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 0;
+    min-width: 220px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    /* Ensure above other elements */
+}
+
+.dropdown-menu.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.dropdown-menu a:hover {
+    color: var(--primary);
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.chevron {
+    transition: transform 0.3s ease;
+}
+
+.chevron.rotate {
+    transform: rotate(180deg);
+}
+
+
+/* Mobile Toggle Button */
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.mobile-toggle.text-white {
+    color: #ffffff;
+}
+
+.mobile-toggle.text-dark {
+    color: var(--secondary);
+    /* Dark color for white backgrounds */
+}
+
+/* Ensure X icon is always visible when menu is open (menu background is white) */
+.desktop-nav.open~.header-actions .mobile-toggle {
+    color: var(--secondary) !important;
+}
+
+.mobile-only {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100vw;
+        /* Use viewport width */
+        max-width: 100%;
+        /* Ensure no overflow */
+        height: calc(100vh - var(--header-height));
+        /* Full height minus header */
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        /* Extra padding for bottom items */
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: auto;
+        /* Enable scrolling */
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        overflow-x: hidden;
+        /* Prevent internal horizontal scroll */
+    }
+
+    .desktop-nav.open {
+        transform: translateX(0);
+    }
+
+    /* Fix white text on white background */
+    .desktop-nav a {
+        color: var(--text-main, #0f172a);
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+        /* Increased spacing */
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .desktop-nav a:hover {
+        color: var(--primary);
+        background-color: #f8fafc;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: inline-flex;
+        margin-top: 1rem;
+        width: 80%;
+        justify-content: center;
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    /* Mobile Dropdown */
+    .nav-item-dropdown {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: auto;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        background: #f8fafc;
+        border: none;
+        box-shadow: none;
+        padding: 5px 0;
+        visibility: visible;
+        opacity: 1;
+        display: none;
+        text-align: center;
+        width: 100%;
+        min-width: 0;
+        /* Reset desktop min-width */
+        border-radius: 0;
+        left: 0;
+        /* Reset desktop left */
+        margin: 0;
+        /* Reset any margins */
+        box-sizing: border-box;
+        /* Ensure padding doesn't overflow width */
+    }
+
+    /* Override standard dropdown behavior for mobile */
+    .dropdown-menu.show {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transform: none !important;
+        /* CRITICAL FIX: Prevent desktop translate(-50%) from applying */
+    }
+
+    .dropdown-menu a {
+        font-size: 1rem;
+        color: #64748b;
+        padding: 12px 10px;
+        /* Reduced horizontal padding slightly */
+        margin-bottom: 0;
+        font-weight: 500;
+        white-space: normal;
+        line-height: 1.4;
+        width: 100%;
+        /* Ensure full width */
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .dropdown-trigger {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 0;
+        font-weight: 700;
+        font-size: 1.25rem;
+        /* Match other links */
+        color: var(--text-main, #0f172a) !important;
+    }
+}

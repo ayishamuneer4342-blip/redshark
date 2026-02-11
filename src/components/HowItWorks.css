@@ -1,0 +1,102 @@
+.how-it-works {
+    padding: 5rem 0;
+    background-color: var(--bg-darker);
+    position: relative;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 40px;
+    /* Center of icon roughly */
+    left: 50px;
+    right: 50px;
+    height: 2px;
+    background: var(--border);
+    z-index: 0;
+}
+
+.step-item {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.step-icon-wrapper {
+    background: var(--bg-card);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--primary);
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--primary);
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.step-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+}
+
+.step-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .steps-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .timeline-line {
+        top: 50px;
+        left: 40px;
+        /* Align with icon center vertical */
+        right: auto;
+        width: 2px;
+        height: 100%;
+        margin-left: 0;
+    }
+
+    .step-item {
+        display: flex;
+        text-align: left;
+        gap: 1.5rem;
+    }
+
+    .step-icon-wrapper {
+        margin: 0;
+        flex-shrink: 0;
+    }
+}

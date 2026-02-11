@@ -1,0 +1,84 @@
+.team-section {
+    padding: 5rem 0;
+    background-color: var(--bg-darker);
+    /* Light gray in light mode */
+}
+
+.team-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.team-stat-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--bg-card);
+    /* White */
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    /* Red */
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.expertise-container {
+    text-align: center;
+    margin-top: 4rem;
+    background: var(--bg-card);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--border);
+}
+
+.expertise-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+    /* Black */
+}
+
+.cert-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cert-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--bg-darker);
+    border: 1px solid var(--border);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.cert-icon {
+    color: var(--primary);
+}
+
+.uni-affiliations p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-muted);
+}
