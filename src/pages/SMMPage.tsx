@@ -66,9 +66,9 @@ const SMMPage = () => {
                             <div style={{
                                 display: 'inline-block',
                                 padding: '8px 16px',
-                                background: '#fdf2f8',
+                                background: 'rgba(206, 17, 17, 0.05)',
                                 borderRadius: '50px',
-                                color: '#db2777',
+                                color: '#ce1111',
                                 fontSize: '0.9rem',
                                 fontWeight: '600',
                                 marginBottom: '24px'
@@ -76,13 +76,13 @@ const SMMPage = () => {
                                 Social Media Marketing Agency in Kerala
                             </div>
                             <h1 className="heading-xl" style={{ marginBottom: '24px', color: '#0f172a' }}>
-                                Result-Driven <span style={{ color: '#db2777' }}>Social Media Marketing</span> in Kerala
+                                Result-Driven <span style={{ color: '#ce1111' }}>Social Media Marketing</span> in Kerala
                             </h1>
                             <p className="text-body-lg" style={{ color: '#64748b', maxWidth: '800px', margin: '0 auto 40px' }}>
                                 at Red Sharc, we help businesses turn social media into a powerful growth channel—not just a posting platform. We combine strategy, creativity, and performance marketing to deliver measurable outcomes.
                             </p>
                             <div className="flex-mobile-col" style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                                <button className="btn btn-primary btn-responsive" style={{ background: '#db2777', borderColor: '#db2777' }}>
+                                <button className="btn btn-primary btn-responsive" style={{ background: '#ce1111', borderColor: '#ce1111' }}>
                                     Get a Free Social Media Audit
                                 </button>
                                 <button className="btn btn-secondary btn-responsive" style={{
@@ -116,7 +116,7 @@ const SMMPage = () => {
                                         "Support long-term sales growth"
                                     ].map((item, i) => (
                                         <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#475569' }}>
-                                            <CheckCircle size={20} color="#db2777" />
+                                            <CheckCircle size={20} color="#ce1111" />
                                             <span>{item}</span>
                                         </li>
                                     ))}
@@ -147,7 +147,7 @@ const SMMPage = () => {
                                             "Kerala-focused audience targeting"
                                         ].map((item, i) => (
                                             <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', fontSize: '1.05rem' }}>
-                                                <CheckCircle size={20} color="#f472b6" style={{ flexShrink: 0 }} />
+                                                <CheckCircle size={20} color="#f87171" style={{ flexShrink: 0 }} />
                                                 <span>{item}</span>
                                             </li>
                                         ))}
@@ -156,7 +156,7 @@ const SMMPage = () => {
                             </ScrollReveal>
                             <ScrollReveal animation="slide-left" delay={200}>
                                 <div style={{ background: 'rgba(255,255,255,0.05)', padding: '40px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                                    <h3 className="heading-md" style={{ marginBottom: '20px', color: '#fbcfe8' }}>We don’t chase likes—we focus on results.</h3>
+                                    <h3 className="heading-md" style={{ marginBottom: '20px', color: '#fecaca' }}>We don’t chase likes—we focus on results.</h3>
                                     <p style={{ color: '#cbd5e1', lineHeight: '1.7', marginBottom: '20px' }}>
                                         As a performance-focused social media marketing agency in Kerala, Red Sharc allows you to reach the right people at the right time.
                                     </p>
@@ -189,8 +189,8 @@ const SMMPage = () => {
                             ].map((service, i) => (
                                 <ScrollReveal key={i} animation="zoom-in" delay={i * 50}>
                                     <div style={{ background: '#fff', padding: '32px', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)', height: '100%', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: '#fdf2f8', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                            <Layers size={20} color="#db2777" />
+                                        <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(206, 17, 17, 0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                            <Layers size={20} color="#ce1111" />
                                         </div>
                                         <h3 className="heading-md" style={{ fontSize: '1.25rem', color: '#0f172a' }}>{service.title}</h3>
                                         <p style={{ color: '#64748b', lineHeight: '1.6' }}>{service.desc}</p>
@@ -207,8 +207,8 @@ const SMMPage = () => {
                             {platforms.map((platform, i) => (
                                 <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
                                     <div className="card-base" style={{ background: '#fff', border: '1px solid #e2e8f0' }}>
-                                        <div style={{ background: '#fce7f3', width: 'fit-content', padding: '10px', borderRadius: '10px', marginBottom: '16px' }}>
-                                            <platform.icon size={24} color="#db2777" />
+                                        <div style={{ background: 'rgba(206, 17, 17, 0.1)', width: 'fit-content', padding: '10px', borderRadius: '10px', marginBottom: '16px' }}>
+                                            <platform.icon size={24} color="#ce1111" />
                                         </div>
                                         <h3 className="heading-md" style={{ marginBottom: '12px', color: '#0f172a' }}>{platform.name}</h3>
                                         <p style={{ color: '#64748b', lineHeight: '1.6' }}>{platform.desc}</p>
@@ -232,7 +232,7 @@ const SMMPage = () => {
                                 <ScrollReveal key={i} animation="fade-up" delay={i * 100}>
                                     <div style={{
                                         padding: '16px 24px',
-                                        background: '#db2777',
+                                        background: '#ce1111',
                                         color: '#fff',
                                         borderRadius: '50px',
                                         fontWeight: 'bold',
@@ -259,7 +259,7 @@ const SMMPage = () => {
                                     <ul style={{ listStyle: 'none', padding: 0 }}>
                                         {["Reach and impressions", "Engagement rate", "Follower growth", "Content performance"].map((item, i) => (
                                             <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', color: '#64748b' }}>
-                                                <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#db2777' }}></div>
+                                                <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#ce1111' }}></div>
                                                 {item}
                                             </li>
                                         ))}
@@ -267,12 +267,12 @@ const SMMPage = () => {
                                 </div>
                             </ScrollReveal>
                             <ScrollReveal animation="fade-up" delay={100}>
-                                <div style={{ padding: '32px', background: '#fdf2f8', borderRadius: '24px' }}>
-                                    <h3 className="heading-md" style={{ marginBottom: '20px', color: '#be185d' }}>Paid Social Media</h3>
+                                <div style={{ padding: '32px', background: 'rgba(206, 17, 17, 0.05)', borderRadius: '24px' }}>
+                                    <h3 className="heading-md" style={{ marginBottom: '20px', color: '#b91c1c' }}>Paid Social Media</h3>
                                     <ul style={{ listStyle: 'none', padding: 0 }}>
                                         {["Leads and conversions", "Cost per lead (CPL)", "Click-through rate (CTR)", "Return on ad spend (ROAS)"].map((item, i) => (
-                                            <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', color: '#9d174d' }}>
-                                                <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#be185d' }}></div>
+                                            <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', color: '#991b1b' }}>
+                                                <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#b91c1c' }}></div>
                                                 {item}
                                             </li>
                                         ))}
@@ -280,12 +280,12 @@ const SMMPage = () => {
                                 </div>
                             </ScrollReveal>
                             <ScrollReveal animation="fade-up" delay={200}>
-                                <div style={{ padding: '32px', background: '#f0f9ff', borderRadius: '24px' }}>
-                                    <h3 className="heading-md" style={{ marginBottom: '20px', color: '#0369a1' }}>Business Impact</h3>
+                                <div style={{ padding: '32px', background: '#f1f5f9', borderRadius: '24px' }}>
+                                    <h3 className="heading-md" style={{ marginBottom: '20px', color: '#334155' }}>Business Impact</h3>
                                     <ul style={{ listStyle: 'none', padding: 0 }}>
                                         {["Enquiries generated", "Website traffic from social", "Conversion quality", "Overall campaign ROI"].map((item, i) => (
-                                            <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', color: '#0c4a6e' }}>
-                                                <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#0284c7' }}></div>
+                                            <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', color: '#1e293b' }}>
+                                                <div style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#ce1111' }}></div>
                                                 {item}
                                             </li>
                                         ))}
@@ -305,7 +305,7 @@ const SMMPage = () => {
                         <div className="grid-2">
                             <ScrollReveal animation="slide-right">
                                 <div style={{ background: 'rgba(255,255,255,0.05)', padding: '40px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                                    <h3 className="heading-md" style={{ marginBottom: '16px', color: '#fbcfe8' }}>Local Retail Brand – Kochi</h3>
+                                    <h3 className="heading-md" style={{ marginBottom: '16px', color: '#fecaca' }}>Local Retail Brand – Kochi</h3>
                                     <div style={{ marginBottom: '16px' }}>
                                         <strong style={{ color: '#fff' }}>Challenge:</strong> <span style={{ color: '#94a3b8' }}>Low engagement and poor visibility</span>
                                     </div>
@@ -319,7 +319,7 @@ const SMMPage = () => {
                             </ScrollReveal>
                             <ScrollReveal animation="slide-left" delay={200}>
                                 <div style={{ background: 'rgba(255,255,255,0.05)', padding: '40px', borderRadius: '24px', border: '1px solid rgba(255,255,255,0.1)' }}>
-                                    <h3 className="heading-md" style={{ marginBottom: '16px', color: '#fbcfe8' }}>Service Business – Trivandrum</h3>
+                                    <h3 className="heading-md" style={{ marginBottom: '16px', color: '#fecaca' }}>Service Business – Trivandrum</h3>
                                     <div style={{ marginBottom: '16px' }}>
                                         <strong style={{ color: '#fff' }}>Challenge:</strong> <span style={{ color: '#94a3b8' }}>No leads from social media</span>
                                     </div>
@@ -364,18 +364,18 @@ const SMMPage = () => {
                             </ScrollReveal>
 
                             <ScrollReveal animation="slide-left">
-                                <div style={{ background: '#fdf2f8', padding: '40px', borderRadius: '24px' }}>
+                                <div style={{ background: 'rgba(206, 17, 17, 0.05)', padding: '40px', borderRadius: '24px' }}>
                                     <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
-                                        <ShieldCheck size={32} color="#db2777" />
-                                        <h2 className="heading-md" style={{ color: '#9d174d', margin: 0 }}>Our Ethical Promise</h2>
+                                        <ShieldCheck size={32} color="#ce1111" />
+                                        <h2 className="heading-md" style={{ color: '#991b1b', margin: 0 }}>Our Ethical Promise</h2>
                                     </div>
-                                    <p style={{ marginBottom: '24px', color: '#831843' }}>
+                                    <p style={{ marginBottom: '24px', color: '#7f1d1d' }}>
                                         As a professional social media marketing agency in Kerala, Red Sharc follows ethical practices:
                                     </p>
                                     <ul style={{ listStyle: 'none', padding: 0 }}>
                                         {["No fake followers or engagement", "No misleading ads", "No spam tactics", "Only real audiences & real growth"].map((item, i) => (
-                                            <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', color: '#831843' }}>
-                                                <CheckCircle size={18} color="#db2777" />
+                                            <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', color: '#7f1d1d' }}>
+                                                <CheckCircle size={18} color="#ce1111" />
                                                 {item}
                                             </li>
                                         ))}
@@ -424,7 +424,7 @@ const SMMPage = () => {
                 <section className="section-responsive" style={{ background: '#0f172a', color: '#fff', textAlign: 'center' }}>
                     <div className="container-responsive" style={{ maxWidth: '800px' }}>
                         <ScrollReveal animation="zoom-in">
-                            <div style={{ background: '#db2777', padding: '60px 40px', borderRadius: '32px' }}>
+                            <div style={{ background: '#ce1111', padding: '60px 40px', borderRadius: '32px' }}>
                                 <h2 className="heading-lg" style={{ marginBottom: '24px' }}>
                                     Ready to Grow with the Best Social Media Marketing Agency in Kerala?
                                 </h2>
@@ -434,7 +434,7 @@ const SMMPage = () => {
                                 <div className="flex-mobile-col" style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
                                     <button className="btn-responsive" style={{
                                         background: '#fff',
-                                        color: '#db2777',
+                                        color: '#ce1111',
                                         border: 'none',
                                         padding: '16px 40px',
                                         fontWeight: 'bold',
