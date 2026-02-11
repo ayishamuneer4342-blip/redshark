@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 import { ArrowRight, CheckCircle, TrendingUp, Search, MousePointer, BarChart, ShieldCheck, Clock, UserCheck, Play } from 'lucide-react';
+import SEO from '../components/SEO';
 
 // Reusing existing logic/styles where appropriate, but customizing for the specific flow
 // We can import specific components if they match exactly, or build inline for specific content requirements.
@@ -11,6 +12,11 @@ import { ArrowRight, CheckCircle, TrendingUp, Search, MousePointer, BarChart, Sh
 const ServicesPage = () => {
     return (
         <div className="page-wrapper">
+            <SEO
+                title="Our Services | Red Sharc Digital Marketing"
+                description="Explore our comprehensive digital marketing services in Kerala: SEO, PPC, Social Media Marketing, Web Development, and more."
+                canonical="https://redsharc.com/services"
+            />
             <Header />
             <main style={{ paddingTop: '80px', backgroundColor: '#fff', color: 'var(--text-main)', minHeight: '100vh' }}>
 
@@ -84,7 +90,7 @@ const ServicesPage = () => {
                     <div className="container" style={{ maxWidth: '1100px' }}>
                         <div style={{ textAlign: 'center', marginBottom: '60px' }}>
                             <p style={{ color: 'var(--primary)', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '10px' }}>Our Proven Process</p>
-                            <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>The Revenue Catalyst Engine™</h2>
+                            <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>The Red Sharc Revenue Catalyst Engine™</h2>
                         </div>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px', position: 'relative' }}>
                             {/* Connectors could be added with CSS pseudo elements */}
@@ -188,7 +194,7 @@ const ServicesPage = () => {
                         <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', textAlign: 'center', marginBottom: '60px' }}>Don't Just Take Our Word For It</h2>
                         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
                             <div style={{ background: '#fff', padding: '40px', borderRadius: '16px', boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)' }}>
-                                <p style={{ fontSize: '1.1rem', fontStyle: 'italic', marginBottom: '20px', color: 'var(--text-main)' }}>"RedShark completely transformed our lead gen. We went from struggling to get 10 demos a month to booking 50+ consistently. The ROI is undeniable."</p>
+                                <p style={{ fontSize: '1.1rem', fontStyle: 'italic', marginBottom: '20px', color: 'var(--text-main)' }}>"Red Sharc completely transformed our lead gen. We went from struggling to get 10 demos a month to booking 50+ consistently. The ROI is undeniable."</p>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
                                     <div style={{ width: '50px', height: '50px', background: '#ddd', borderRadius: '50%' }}></div>
                                     <div>

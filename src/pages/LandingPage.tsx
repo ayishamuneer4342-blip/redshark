@@ -19,6 +19,7 @@ import {
     MousePointerClick,
     Search
 } from 'lucide-react';
+import SEO from '../components/SEO';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SocialProof from '../components/SocialProof';
@@ -50,6 +51,11 @@ const LandingPage = () => {
 
     return (
         <div className="landing-page">
+            <SEO
+                title="Performance Marketing Agency | Scale Revenue | Red Sharc"
+                description="Red Sharc constructs predictable revenue engines for growth-focused brands. SEO, PPC, and Conversion Optimization experts."
+                canonical="https://redsharc.com/landing"
+            />
             <Header />
 
             {/* --- HERO SECTION --- */}
@@ -174,7 +180,7 @@ const LandingPage = () => {
                         <ScrollReveal animation="slide-left" delay={100}>
                             <div className="growth-service-left">
                                 <h2>
-                                    Enter The <span className="highlight-red-box">RedShark Growth Engine</span>
+                                    Enter The <span className="highlight-red-box">Red Sharc Growth Engine</span>
                                 </h2>
 
                                 <div className="visual-orbit-container">

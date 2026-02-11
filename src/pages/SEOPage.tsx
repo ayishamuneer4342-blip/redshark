@@ -8,6 +8,7 @@ import {
     ChevronDown, ChevronUp, ArrowRight, ShieldCheck, MapPin,
     FileText, Zap, Target, Settings, Layers
 } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const SEOPage = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -22,7 +23,7 @@ const SEOPage = () => {
             answer: "SEO is a long-term strategy. Most businesses start seeing visible improvements within 3 to 4 months, while strong and stable results build over time depending on competition and industry."
         },
         {
-            question: "Why should I choose RedShark as the best SEO company in Kerala?",
+            question: "Why should I choose Red Sharc as the best SEO company in Kerala?",
             answer: "Unlike many agencies that focus only on reports, we focus on execution and measurable growth. Our strategies are customized, transparent, and aligned with your business goals."
         },
         {
@@ -74,6 +75,11 @@ const SEOPage = () => {
 
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>
+            <SEO
+                title="SEO Services in Kerala | Rank #1 on Google"
+                description="Dominate search results with Red Sharc, the leading SEO agency in Kerala. We build sustainable organic growth strategies."
+                canonical="https://redsharc.com/search-engine-optimization"
+            />
             <Header />
 
             <main style={{ paddingTop: '80px' }}>
@@ -97,7 +103,7 @@ const SEOPage = () => {
                                 Best SEO Company in <span style={{ color: '#dc2626' }}>Kerala</span>
                             </h1>
                             <p className="text-body-lg" style={{ color: '#64748b', maxWidth: '900px', margin: '0 auto 40px' }}>
-                                Looking for the best SEO company in Kerala to grow your online visibility and generate consistent leads? You're in the right place. At RedShark, we provide result-driven SEO services in Kerala that help businesses rank higher on Google, attract quality traffic, and convert visitors into customers.
+                                Looking for the best SEO company in Kerala to grow your online visibility and generate consistent leads? You're in the right place. At Red Sharc, we provide result-driven SEO services in Kerala that help businesses rank higher on Google, attract quality traffic, and convert visitors into customers.
                             </p>
                             <p className="text-body" style={{ color: '#64748b', maxWidth: '800px', margin: '0 auto 40px' }}>
                                 We don't believe in shortcuts or generic SEO packages. Our approach is strategic, data-backed, and focused on real business growth.
@@ -123,7 +129,7 @@ const SEOPage = () => {
                     <div className="container-responsive">
                         <ScrollReveal animation="fade-up">
                             <div className="text-center" style={{ marginBottom: '60px' }}>
-                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>Why Choose RedShark as Your SEO Agency in Kerala?</h2>
+                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>Why Choose Red Sharc as Your SEO Agency in Kerala?</h2>
                                 <p style={{ color: '#64748b', maxWidth: '800px', margin: '0 auto' }}>
                                     While many agencies focus only on plans and reports, we focus on execution and results. As a trusted SEO agency in Kerala, our goal is to deliver measurable outcomes—not vanity rankings.
                                 </p>
@@ -486,7 +492,7 @@ const SEOPage = () => {
                                 Ready to Work with the Best SEO Company in Kerala?
                             </h2>
                             <p className="text-body-lg" style={{ opacity: '0.9', maxWidth: '700px', margin: '0 auto 40px' }}>
-                                If you're looking for a reliable SEO agency in Kerala that focuses on execution, transparency, and real growth, RedShark is your trusted partner.
+                                If you're looking for a reliable SEO agency in Kerala that focuses on execution, transparency, and real growth, Red Sharc is your trusted partner.
                             </p>
                             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
                                 <button className="btn-responsive" style={{
@@ -520,7 +526,7 @@ const SEOPage = () => {
                 <section style={{ padding: '60px 20px', background: '#f1f5f9', fontSize: '0.9rem', color: '#64748b', textAlign: 'center' }}>
                     <div className="container-responsive" style={{ maxWidth: '800px' }}>
                         <p>
-                            RedShark is a results-driven digital marketing agency offering SEO services in Kerala. We help businesses grow through ethical, data-driven strategies focused on improving online visibility, generating quality leads, and building long-term growth.
+                            Red Sharc is a results-driven digital marketing agency offering SEO services in Kerala. We help businesses grow through ethical, data-driven strategies focused on improving online visibility, generating quality leads, and building long-term growth.
                         </p>
                     </div>
                 </section>

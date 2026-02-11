@@ -6,6 +6,7 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollReveal from '../components/UI/ScrollReveal';
 import { ArrowLeft, Clock, Calendar, Share2, Facebook, Twitter, Linkedin } from 'lucide-react';
 import { blogPosts } from '../data/blogData';
+import SEO from '../components/SEO';
 import './BlogPostPage.css';
 
 const BlogPostPage = () => {
@@ -17,6 +18,7 @@ const BlogPostPage = () => {
     if (!post) {
         return (
             <div className="page-wrapper">
+                <SEO title="Post Not Found | Red Sharc" description="The requested blog post could not be found." />
                 <Header />
                 <div style={{ padding: '150px 20px', textAlign: 'center', minHeight: '60vh' }}>
                     <h1 className="heading-lg">Post Not Found</h1>
@@ -62,6 +64,12 @@ const BlogPostPage = () => {
 
     return (
         <div className="page-wrapper post-page">
+            <SEO
+                title={`${post.title} | Red Sharc Blog`}
+                description={post.summary}
+                type="article"
+                canonical={`https://redsharc.com/blog/${slug}`}
+            />
             <Header />
 
             <main style={{ paddingTop: '80px', background: '#fff', color: '#334155' }}>

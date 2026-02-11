@@ -5,6 +5,7 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollReveal from '../components/UI/ScrollReveal';
 import { Code, Smartphone, Zap, Lock, AlertTriangle, CheckCircle, ChevronDown, ChevronUp, ArrowRight, ShieldCheck, Layout, Database, Server, ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const WebDevPage = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -34,6 +35,11 @@ const WebDevPage = () => {
 
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>
+            <SEO
+                title="Web Development Company in Kerala | Custom Websites"
+                description="Red Sharc is a top web development company in Kerala building fast, secure, and conversion-focused websites and applications."
+                canonical="https://redsharc.com/web-development"
+            />
             <Header />
 
             <main style={{ paddingTop: '80px' }}>
@@ -127,7 +133,7 @@ const WebDevPage = () => {
                     <div className="container-responsive">
                         <ScrollReveal animation="fade-up">
                             <div className="text-center" style={{ marginBottom: '60px' }}>
-                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>Why Businesses Choose Red Shark</h2>
+                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>Why Businesses Choose Red Sharc</h2>
                                 <p style={{ color: '#64748b', maxWidth: '700px', margin: '0 auto' }}>
                                     We don't just write code; we build digital assets that grow your business.
                                 </p>
@@ -234,7 +240,7 @@ const WebDevPage = () => {
                     <div className="container-responsive">
                         <ScrollReveal>
                             <div className="text-center" style={{ marginBottom: '60px' }}>
-                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>The RedShark Digital Stack</h2>
+                                <h2 className="heading-lg" style={{ color: '#0f172a', marginBottom: '16px' }}>The Red Sharc Digital Stack</h2>
                                 <p style={{ color: '#64748b' }}>From idea to launch, our process ensures excellence.</p>
                             </div>
                         </ScrollReveal>
@@ -395,7 +401,7 @@ const WebDevPage = () => {
                 <section style={{ padding: '60px 20px', background: '#f1f5f9', fontSize: '0.9rem', color: '#64748b', textAlign: 'center' }}>
                     <div className="container-responsive" style={{ maxWidth: '800px' }}>
                         <p>
-                            Red Shark builds high-performance websites and applications. From custom React apps to scalable e-commerce stores, we engineer digital experiences that convert.
+                            Red Sharc builds high-performance websites and applications. From custom React apps to scalable e-commerce stores, we engineer digital experiences that convert.
                         </p>
                     </div>
                 </section>

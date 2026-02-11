@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className="footer-grid">
                     {/* Col 1 */}
                     <div className="footer-col">
-                        <img src="/logo-red.jpg" alt="REDSHARK" style={{ height: '64px', width: 'auto', marginBottom: '16px' }} />
+                        <img src="/logo-red.jpg" alt="RED SHARC" style={{ height: '64px', width: 'auto', marginBottom: '16px' }} />
                         <p className="footer-desc">
                             Access the world's top digital marketing talent without the agency markup.
                         </p>
@@ -51,7 +51,7 @@ const Footer = () => {
                         <ul className="contact-list">
                             <li>
                                 <Mail size={16} className="contact-icon" />
-                                <span>hello@redshark.com</span>
+                                <span>hello@redsharc.com</span>
                             </li>
                             <li>
                                 <MapPin size={16} className="contact-icon" />
@@ -62,7 +62,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <div className="copyright">© 2026 RedShark Collective. All rights reserved.</div>
+                    <div className="copyright">© 2026 Red Sharc Collective. All rights reserved.</div>
                     <div className="policy-links">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>

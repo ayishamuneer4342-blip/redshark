@@ -15,7 +15,7 @@ const ChatBot = () => {
     const [messages, setMessages] = useState<Message[]>([
         {
             id: 1,
-            text: "Hi! Welcome to RedShark. I'm your virtual assistant. How can we help you today?",
+            text: "Hi! Welcome to Red Sharc. I'm your virtual assistant. How can we help you today?",
             sender: 'bot',
             type: 'options',
             options: ['Services', 'Pricing', 'Contact Support', 'General Inquiry']
@@ -86,7 +86,7 @@ const ChatBot = () => {
                 nextStep = 'requirements';
             } else if (step === 'requirements') {
                 setUserData(prev => ({ ...prev, requirements: currentInput }));
-                botText = "Perfect. We've received your details. Our team will review them and contact you shortly!\n\nYou can also reach us directly at +971 50 123 4567 or hello@redshark.ae.";
+                botText = "Perfect. We've received your details. Our team will review them and contact you shortly!\n\nYou can also reach us directly at +971 50 123 4567 or hello@redsharc.ae.";
                 nextStep = 'end';
             }
 
@@ -109,7 +109,7 @@ const ChatBot = () => {
                     <div className="chat-header">
                         <div className="chat-title">
                             <Bot size={20} />
-                            <span>RedShark Assistant</span>
+                            <span>Red Sharc Assistant</span>
                         </div>
                         <button className="close-btn" onClick={() => setIsOpen(false)}>
                             <X size={20} />

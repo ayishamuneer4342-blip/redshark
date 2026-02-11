@@ -38,7 +38,7 @@ export const andromedaUpdatePost: BlogPost = {
                 'Audit your "Definitional" Content: If an article just answers "What is X?", consider deleting it or rewriting it to add a unique opinion. Stop explaining; start opining.',
                 'Inject Personal Stories: Add author bios that matter. Use "I" and "We" in your copy. Show photos of you doing the work. Prove you are real humans.',
                 'Focus on "Hidden Gem" Knowledge: Write about the edge cases, the weird failures, the nuances, the things only an expert would know after 10 years in the field. That is the data gap the AI needs you to fill.',
-                'Build a Brand: When the chaotic winds of algorithm changes blow, Brand is the only shelter. If people search for you by name ("RedShark SEO tips"), Google cannot hide you. Be the destination, not just a search result.'
+                'Build a Brand: When the chaotic winds of algorithm changes blow, Brand is the only shelter. If people search for you by name ("Red Sharc SEO tips"), Google cannot hide you. Be the destination, not just a search result.'
             ]
         },
         { type: 'paragraph', text: 'The sky isn\'t falling, but the weather has changed permanently. The era of easy traffic is over. The era of real value has returned. Adjust your sails.' }

@@ -5,6 +5,7 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollReveal from '../components/UI/ScrollReveal';
 import { Target, DollarSign, MousePointer, PieChart, CheckCircle, ChevronDown, ChevronUp, Users, BarChart2, Search, Briefcase, MapPin, Shield, Layers, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const SEMPage = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -42,6 +43,11 @@ const SEMPage = () => {
 
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#334155' }}>
+            <SEO
+                title="Google Ads Agency in Kerala | PPC Services"
+                description="Get instant leads and sales with Red Sharc, the top Google Ads agency in Kerala. High ROI PPC campaigns tailored for your business."
+                canonical="https://redsharc.com/google-ads"
+            />
             <Header />
 
             <main style={{ paddingTop: '80px' }}>

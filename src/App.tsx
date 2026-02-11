@@ -1,36 +1,68 @@
+import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import AboutPage from './pages/AboutPage';
-import ServicesPage from './pages/ServicesPage';
-import SEOPage from './pages/SEOPage';
-import SEMPage from './pages/SEMPage';
-import SMMPage from './pages/SMMPage';
-import WebDevPage from './pages/WebDevPage';
-import BlogPostPage from './pages/BlogPostPage';
-import BlogPage from './pages/BlogPage';
-import ThankYouPage from './pages/ThankYouPage';
-import LandingPage from './pages/LandingPage';
 import ScrollToHash from './utils/ScrollToHash';
-import './components/UI/ScrollReveal'; // Import global styles if needed or ensuring context
+import './components/UI/ScrollReveal';
 import ChatBot from './components/ChatBot';
+
+// Lazy load pages
+const Home = lazy(() => import('./pages/Home'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const SEOPage = lazy(() => import('./pages/SEOPage'));
+const SEMPage = lazy(() => import('./pages/SEMPage'));
+const SMMPage = lazy(() => import('./pages/SMMPage'));
+const WebDevPage = lazy(() => import('./pages/WebDevPage'));
+const BlogPage = lazy(() => import('./pages/BlogPage'));
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
+const ThankYouPage = lazy(() => import('./pages/ThankYouPage'));
+const LandingPage = lazy(() => import('./pages/LandingPage'));
+
+// Loading fallback
+const PageLoader = () => (
+  <div style={{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    width: '100vw',
+    backgroundColor: '#fff'
+  }}>
+    <div style={{
+      width: '40px',
+      height: '40px',
+      border: '4px solid #f3f3f3',
+      borderTop: '4px solid #ce1111',
+      borderRadius: '50%',
+      animation: 'spin 1s linear infinite'
+    }} />
+    <style>{`
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    `}</style>
+  </div>
+);
 
 function App() {
   return (
     <Router>
       <ScrollToHash />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/search-engine-optimization" element={<SEOPage />} />
-        <Route path="/google-ads" element={<SEMPage />} />
-        <Route path="/social-media-marketing" element={<SMMPage />} />
-        <Route path="/web-development" element={<WebDevPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:slug" element={<BlogPostPage />} />
-        <Route path="/thank-you" element={<ThankYouPage />} />
-        <Route path="/landing" element={<LandingPage />} />
-      </Routes>
+      <Suspense fallback={<PageLoader />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/search-engine-optimization" element={<SEOPage />} />
+          <Route path="/google-ads" element={<SEMPage />} />
+          <Route path="/social-media-marketing" element={<SMMPage />} />
+          <Route path="/web-development" element={<WebDevPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="/landing" element={<LandingPage />} />
+        </Routes>
+      </Suspense>
       <ChatBot />
     </Router>
   )

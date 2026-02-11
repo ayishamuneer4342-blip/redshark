@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { CheckCircle, ArrowLeft } from 'lucide-react';
@@ -7,6 +8,11 @@ import { CheckCircle, ArrowLeft } from 'lucide-react';
 const ThankYouPage = () => {
     return (
         <div className="page-wrapper">
+            <SEO
+                title="Thank You | Red Sharc"
+                description="Thank you for getting in touch with Red Sharc. We will get back to you shortly."
+                noindex={true}
+            />
             <Header />
             <main style={{
                 paddingTop: '80px',

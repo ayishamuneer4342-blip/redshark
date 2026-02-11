@@ -56,7 +56,7 @@ const Hero = () => {
                     <div className="visual-orbit-container">
                         <div className="orbit-system">
                             <div className="orbit-center-circle">
-                                <span className="brand-text">REDSHARK</span>
+                                <span className="brand-text">RED SHARC</span>
                             </div>
 
                             {/* Inner Ring */}

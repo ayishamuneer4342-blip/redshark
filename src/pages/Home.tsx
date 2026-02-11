@@ -17,9 +17,16 @@ import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollReveal from '../components/UI/ScrollReveal';
 
+import SEO from '../components/SEO';
+
 function Home() {
     return (
         <div className="home-page">
+            <SEO
+                title="Red Sharc | Digital Marketing Agency in Kerala"
+                description="Red Sharc is a leading digital marketing agency in Kerala offering SEO, Google Ads, SMM, and Web Development services. Transform your business today."
+                canonical="https://redsharc.com/"
+            />
             <Header />
             <main>
                 <Hero />

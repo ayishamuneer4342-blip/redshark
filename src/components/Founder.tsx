@@ -9,10 +9,10 @@ const Founder = () => {
             <div className="container">
                 <div className="founder-wrapper">
                     <div className="founder-content">
-                        <h2 className="section-title text-left">Hi, I'm Sreyas, founder of RedShark.</h2>
+                        <h2 className="section-title text-left">Hi, I'm Sreyas, founder of Red Sharc.</h2>
 
                         <p className="founder-story">
-                            I started RedShark after watching the same problem repeat again and again.
+                            I started Red Sharc after watching the same problem repeat again and again.
                         </p>
 
                         <p className="founder-text">
@@ -42,9 +42,9 @@ const Founder = () => {
                             I didn’t want either option.
                         </p>
 
-                        <h4 className="font-bold text-xl mb-3 text-white">Why I built RedShark</h4>
+                        <h4 className="font-bold text-xl mb-3 text-white">Why I built Red Sharc</h4>
                         <p className="founder-text">
-                            RedShark is my attempt to fix this.
+                            Red Sharc is my attempt to fix this.
                         </p>
                         <p className="founder-closing">
                             I bring serious business owners and reputed freelancers under one roof.<br />
@@ -53,13 +53,13 @@ const Founder = () => {
 
                         <div className="founder-sig">
                             <div className="sig-name">Sreyas</div>
-                            <div className="sig-role">Founder, RedShark</div>
+                            <div className="sig-role">Founder, Red Sharc</div>
                         </div>
 
                         <div className="founder-links">
                             <a href="#" className="founder-link"><Linkedin size={18} /> LinkedIn</a>
                             <span className="separator">•</span>
-                            <a href="mailto:hello@redshark.com" className="founder-link"><Mail size={18} /> Email</a>
+                            <a href="mailto:hello@redsharc.com" className="founder-link"><Mail size={18} /> Email</a>
                             <span className="separator">•</span>
                             <a href="#contact" className="founder-link highlight">Book a call <ArrowRight size={16} /></a>
                         </div>
@@ -67,7 +67,7 @@ const Founder = () => {
 
                     <div className="founder-image-col">
                         <div className="founder-image-box">
-                            <img src={founderImage} alt="Sreyas, Founder of RedShark" className="founder-image" loading="lazy" />
+                            <img src={founderImage} alt="Sreyas, Founder of Red Sharc" className="founder-image" loading="lazy" />
                         </div>
                     </div>
                 </div>

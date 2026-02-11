@@ -5,11 +5,17 @@ import WhatsAppButton from '../components/WhatsAppButton';
 import ScrollReveal from '../components/UI/ScrollReveal';
 import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogData';
+import SEO from '../components/SEO';
 import '../components/Blog.css'; // Reuse existing blog styles
 
 const BlogPage = () => {
     return (
         <div className="page-wrapper">
+            <SEO
+                title="Digital Marketing Blog | Insights & Strategies | Red Sharc"
+                description="Explore expert insights on SEO, Performance Marketing, and Web Development. Read the latest trends and strategies to grow your business."
+                canonical="https://redsharc.com/blog"
+            />
             <Header />
 
             <main style={{ paddingTop: '80px', background: '#fff', color: '#334155' }}>

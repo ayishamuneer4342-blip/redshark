@@ -9,6 +9,7 @@ import {
     ThumbsUp, Globe, BarChart2, Zap, Target, Layers, Smartphone
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const SMMPage = () => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -50,6 +51,11 @@ const SMMPage = () => {
 
     return (
         <div className="page-wrapper" style={{ backgroundColor: '#fff', color: '#0f172a' }}>
+            <SEO
+                title="Social Media Marketing Agency in Kerala | SMM Services"
+                description="Boost your brand visibility with Red Sharc, the best social media marketing agency in Kerala. Strategic, result-driven SMM campaigns."
+                canonical="https://redsharc.com/social-media-marketing"
+            />
             <Header />
 
             <main style={{ paddingTop: '80px' }}>

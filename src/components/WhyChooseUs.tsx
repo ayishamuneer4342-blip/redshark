@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check } from 'lucide-react';
+import { Check, TrendingUp, Users, Target, BarChart2, Zap } from 'lucide-react';
 import './WhyChooseUs.css';
 
 const benefits = [
@@ -33,7 +33,61 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
                 <div className="why-visual">
-                    <img src="/why-us-visual.png" alt="Why Choose Us" className="img-fluid rounded-lg shadow-lg" style={{ maxWidth: '100%', height: 'auto', borderRadius: '1rem' }} />
+                    <div className="why-visual-container">
+                        {/* Orbit Rings */}
+                        <div className="orbit-ring ring-1"></div>
+                        <div className="orbit-ring ring-2"></div>
+
+                        {/* Core Element */}
+                        <div className="core-circle">
+                            <div className="core-content">
+                                <Zap size={32} color="#fff" style={{ marginBottom: '8px' }} />
+                                <span className="core-text">GROWTH</span>
+                                <span className="core-sub">Engine</span>
+                            </div>
+                        </div>
+
+                        {/* Floating Cards */}
+                        <div className="float-card card-1">
+                            <div className="card-icon bg-light-red">
+                                <TrendingUp size={20} />
+                            </div>
+                            <div className="card-content">
+                                <span className="card-label">Conversion</span>
+                                <span className="card-value">+150%</span>
+                            </div>
+                        </div>
+
+                        <div className="float-card card-2">
+                            <div className="card-icon bg-light-blue">
+                                <Users size={20} />
+                            </div>
+                            <div className="card-content">
+                                <span className="card-label">Engagement</span>
+                                <span className="card-value">High Vol.</span>
+                            </div>
+                        </div>
+
+                        <div className="float-card card-3">
+                            <div className="card-icon bg-light-green">
+                                <Target size={20} />
+                            </div>
+                            <div className="card-content">
+                                <span className="card-label">ROAS</span>
+                                <span className="card-value">4.5x</span>
+                            </div>
+                        </div>
+
+                        <div className="float-card card-4">
+                            <div className="card-icon bg-light-purple">
+                                <BarChart2 size={20} />
+                            </div>
+                            <div className="card-content">
+                                <span className="card-label">Analytics</span>
+                                <span className="card-value">Real-time</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
